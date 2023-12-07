@@ -1,0 +1,368 @@
+.shapka {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(30, 30, 32);
+}
+.shapka .container {
+    height: inherit ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 90px;
+}
+.shapka-menu{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20;
+}
+.shapka-menu li {
+    display: inline-block;
+}
+.shapka-menu li a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 16pt;
+}
+.shapka-menu li a:hover{
+    display: inline-block;
+    color: #374aee;
+    text-decoration-line: underline;
+    padding: 10px;
+    text-shadow: 2px 2px 8px #648dfc;
+}
+.shapka-logo{
+    text-shadow: 2px 2px 8px #3465ec;
+    font-size: 24pt;
+    color: #374aee;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-btn {
+	width: 20px;
+	height: 30px;
+	position: relative;
+	z-index:2;
+	overflow: hidden;
+}
+.menu-btn span {
+	width: 30px;
+	height: 2px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #222222;
+	transition: all 0.5s;
+}
+.menu-btn span:nth-of-type(2) {
+	top: calc(50% - 5px);
+}
+.menu-btn span:nth-of-type(3) {
+	top: calc(50% + 5px);
+}
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 15px;
+  background: #FFEFBA;
+	transform: translateX(-100%);
+	transition: transform 0.5s; 
+    margin: 0px;
+}
+.menu.active {
+	transform: translateX(0);
+}
+.menu li {
+	list-style-type: none;
+}
+.menu-btn.active span:nth-of-type(1) {
+    display: none;
+  }
+
+
+.block-1 {
+    background: url(./foto/img2.jpg);
+    height: 500px;
+    background-size: cover;
+    backdrop-filter: blur(500px);
+}
+
+.fraza{
+    color: white;
+    margin-top: 80px;
+    margin-left: 40px;
+    font-size: 30pt;
+    font-weight: 800;
+    text-decoration: none;
+}
+.block-shapka a{
+    color: white;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+.block-shapka {
+    background-color: rgba(47, 47, 49, 0.623);
+    width: 400px;
+    height: 23px ;
+    margin-left: 80px;
+    font-size: 14pt;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.button-container{
+    margin-left: 80px;
+}
+.neon-button{
+    border: 2px solid;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-style: oblique;
+    padding: 10px 20px;
+    font-weight: 300;
+    transition: 0.3s;
+    color: #401cdf;
+}
+.neon-button:hover {
+    color: white;
+    border: 0;
+    background-color: #401cdf;
+    box-shadow: 10px 10px 70px 30px rgb(33, 7, 182);
+}
+.block-2{
+    width: 100%;
+    height: 700px;
+    background-color: rgb(30, 30, 32);
+    margin-top: 225px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.foto{
+    height: 450px;
+    width: 380px;
+    margin-left: 160px;
+    margin-top: 100px;
+    border-radius: 15px;
+    box-shadow: 33px 43px 25px #0000FF;
+}
+.block-2-text {
+    color: white;
+    background-color: rgba(180, 180, 223, 0);
+    width: 500px;
+    height: 300px;
+    margin-right: 160px;
+    margin-top: 110px;
+    list-style-type: none;
+    padding: 0px;
+
+}
+.block-2-text p{
+    text-align: right;
+    color: #2d76e2;
+    font-size: 16pt;
+    padding: 5px 30px;
+    background: linear-gradient(to right, rgb(61, 61, 61), rgb(30, 30, 32), rgb(30, 30, 32),rgb(30, 30, 32));
+    height: 30px;
+    width: 120px;
+    
+}
+.block-2-text li {
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+    font-size: 12pt;
+}
+h3{
+    color: rgb(255, 255, 255);
+    font-size: 18pt;
+    margin:1px
+
+
+}
+.block-2-tabl{
+    margin-top: 20px;
+    column-count: 2;
+    background-color: rgb(61, 61, 61) ;
+    color: rgb(190, 190, 190);
+    width: 410px;
+    height: 90px ;
+    padding-top: 30px;
+    padding-left: 20px;
+    letter-spacing: 1px;
+    line-height: 2;
+    float: left;
+}
+.colortext{
+    color: #2d2df8;
+    font-weight: bolder;
+    font-style: oblique;
+}
+.line{
+    height: 3px;
+    width: 100px;
+    background-color: #401cdf;
+    margin: 6px 0px 20px 0px;
+}
+.stroka-menu{
+    display: flex;
+    align-items: baseline;
+
+}
+.line-grey{
+    height: 3px;
+    width: 100px;
+    background-color:  rgba(61, 61, 61, 0.267);
+    margin: 6px 0px 20px 0px;
+    float: left;
+}
+.kvadrat{
+    height: 5px;
+    width: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 7px #2488da;;
+    background-color: #401cdf;
+}
+.one{
+    color: rgb(61, 61, 61) ;
+    font-size: 16pt;
+    margin: 15px;
+}
+.bi {
+    margin-top: 10px;
+    width: 30px;  
+    height: 30px;
+    float: left;
+    
+}
+.bic{
+    background-color: rgb(61, 61, 61);
+    width: 60px;  
+    height: 120px;
+    margin: 20px 0px 0px 430px;
+}
+.bi.bic{
+        float: left;
+}
+.button{
+        margin-top: 20px;
+}
+.blue-button{
+    background-color: #0000FF;;
+    border: none;
+    color: white;
+    padding: 12px 26px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    font-style: oblique;
+}
+.block-3{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(30, 30, 32);
+}
+.block-3-text p{
+    text-align: right;
+    color: #2d76e2;
+    font-size: 16pt;
+    padding: 5px 30px;
+    background: linear-gradient(to right, rgb(61, 61, 61), rgb(30, 30, 32), rgb(30, 30, 32),rgb(30, 30, 32));
+    height: 30px;
+    width: 120px;
+    margin-left: 100px;
+}
+.togeter{
+    display: flex;
+    justify-content: center;
+
+}
+.part1{
+    background-color: rgb(61, 61, 61) ;
+    height: 280px;
+    width: 430px;
+    margin-left: 220px;
+}
+.personal-skills{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+.personal-skills p{
+    color: rgb(189, 189, 189) ;
+    font-size: 16pt;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0px;
+}
+.icon{
+    margin-top: 10px;
+    margin-left: 200px;
+    color: rgb(189, 189, 189) ;
+}
+.part2{
+    background-color: rgb(61, 61, 61) ;
+    height: 280px;
+    width: 430px;
+    margin-right: 220px;
+}
+.professional-skills{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+.professional-skills p{
+    color: rgb(189, 189, 189) ;
+    font-size: 16pt;
+    text-align: center;
+    padding-top: 10px;
+    margin: 3px;
+}
+.skills p{
+    font-size: 14pt;
+    color: rgb(124, 123, 123);
+    margin-left: 20px;
+    width: 200px;
+}
+label {
+    padding-right: 10px;
+    font-size: 1rem;
+    color: green;
+}
+.progress-bar {
+    margin-left: 20px;
+    background-color:  rgb(124, 123, 123);
+    height: 15px;
+    width: 400px;
+    margin-top: -15px;
+   }
+   
+   .progress-bar span {
+    background-color:  #2d2df8;
+    display: inline-block;
+    padding: 0px;
+    border: 0px;
+    height: 15px;
+    width: 400px;
+    transition: width .4s ease-in-out;
+   } 
+.chatt{
+    
+} 
+.chat{
+    color: rgb(124, 123, 123);
+    margin-left: 347px;
+    margin-bottom: 13px;
+}
